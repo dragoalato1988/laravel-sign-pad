@@ -12,6 +12,12 @@ return [
      */
     'signatures_path' => 'signatures',
 
+
+    /**
+     * Path where the signature images will be stored.
+     */
+    'signatures_db' => 'mysql2',
+
     /**
      * Path where the documents will be stored.
      */
