@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Storage;
  */
 class Signature extends Model
 {
+    protected $connection = 'mysql2';
+
     protected static function boot()
     {
         parent::boot();
