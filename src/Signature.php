@@ -17,7 +17,10 @@ use Illuminate\Support\Facades\Storage;
  */
 class Signature extends Model
 {
-    protected $connection = 'mysql2';
+    public function getConnectionName()
+    {
+        return config('sign-pad.signatures_db');
+    }
 
     protected static function boot()
     {
