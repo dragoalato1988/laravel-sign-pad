@@ -16,7 +16,7 @@ return [
     /**
      * Path where the signature images will be stored.
      */
-    'signatures_db' => 'mysql2',
+    'signatures_db' => env('SIGN_PAD_SIGNATURES_DB', 'mysql2'),
 
     /**
      * Path where the documents will be stored.
